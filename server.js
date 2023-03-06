@@ -8,6 +8,12 @@ app.get("/add", (req, res) => {
     res.send(200, sum);
 });
 
+app.get("/subtract", (req, res) => {
+    const {x, y} = req.query;
+    const difference = parseInt(x) - parseInt(y);
+    res.send(200, difference);
+});
+
 app.get("/", (req, res) => {
     res.send(200, "Hello World");
 });
