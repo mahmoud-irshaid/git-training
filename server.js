@@ -10,6 +10,10 @@ app.get("/add", (req, res) => {
 
 app.get("/divide", (req, res) => {
     const {x, y} = req.query;
+
+    if (parseInt(y) == 0)
+        res.send("Division by Zero not allowed");
+
     const quotient = parseInt(x) / parseInt(y);
     res.send(200, quotient);
 });
