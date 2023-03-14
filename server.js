@@ -15,7 +15,7 @@ app.get("/subtract", (req, res) => {
 });
 
 app.get("/", (req, res) => {
-    res.send(200, "Hello World");
+    res.send(200, "Hello World, this is becoming mmuch more fun!");
 });
 
 app.listen(8000, (req, res) => {
