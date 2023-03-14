@@ -14,6 +14,12 @@ app.get("/subtract", (req, res) => {
     res.send(200, difference);
 });
 
+app.get("/multiply", (req, res) => {
+    const {x, y} = req.query;
+    const product = parseInt(x) * parseInt(y);
+    res.send(200, product);
+});
+
 app.get("/", (req, res) => {
     res.send(200, "Hello World, this is becoming mmuch more fun!");
 });
