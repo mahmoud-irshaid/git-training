@@ -21,6 +21,7 @@ app.get("/multiply", (req, res) => {
 });
 
 app.get("/", (req, res) => {
+    console.log("Root Path request");
     res.send(200, "Hello World, this is becoming mmuch more fun!");
 });
 
